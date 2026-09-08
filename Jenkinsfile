@@ -16,7 +16,7 @@ pipeline {
 
         stage('Ejecutar pruebas') {
             steps {
-                sh 'docker run --rm simple-python-pyinstaller-app'
+                sh 'printf "5\n3\n" | docker run -i --rm simple-python-pyinstaller-app'
             }
         }
     }
